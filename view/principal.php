@@ -107,7 +107,7 @@ if (isset($_GET["acao"])) {
         $_SESSION['logado'] = 0;
         ?>
         <script type="text/javascript">
-        document.location.href = "http://localhost:4000/sgta/index.php?erro=2";
+        document.location.href = "http://localhost/sgta/index.php?erro=2";
         </script>
         <?php
     }

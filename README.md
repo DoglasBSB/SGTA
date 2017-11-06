@@ -1,3 +1,3 @@
 # sgtaxyz
 
-sitema  de gerenciamento de trabalhos academicos (em teste)
+sitema de gerenciamento de trabalhos academicos (em teste)
