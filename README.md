@@ -12,14 +12,15 @@ Adendo: Para aquele que tiver interesse em verificar o Projeto siga o Manuel de 
 Projeto desenvolvido apartir de um framework básico e com conhecimento atráves de sites, Youtube e livros.
 
 
-#######################################################################################################
-#                                                                                                     #
-#    “Aprender é a única coisa de que a mente nunca se cansa, nunca tem medo e nunca se arrepende”.   #
-#                                                                          (Leonardo da Vinci)        #
-#                                                                                                     #
-#######################################################################################################                                                                          
+
+                                                                                                     
+    “Aprender é a única coisa de que a mente nunca se cansa, nunca tem medo e nunca se arrepende”.   
+                                                                         (Leonardo da Vinci)        
+                                                                                                     
+                                                                        
                                                                           
 
-# Link da Licença Júridica Creative Commons
-  http://creativecommons.org/licenses/by-sa/2.5/br/legalcode
+ Link da Licença Júridica Creative Commons
+ 
+ http://creativecommons.org/licenses/by-sa/2.5/br/legalcode
 
