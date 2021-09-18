@@ -7,9 +7,9 @@ As tecnologias e ferramentas utilizadas para o desenvolvimento desta solução s
 
 Para projetar o sistema SGTA é usado o Processo Unificado Rational - RUP e a Linguagem Unificada de Modelagem - UML. 
 
-Adendo: Para aquele que tiver interesse em verificar o Projeto siga o Manuel de implantação disponibilizado em PDF e fique avontade!!!!
+Adendo: Para aquele que tiver interesse em verificar o Projeto siga o Manual de implantação disponibilizado em PDF e fique à vontade!
 
-Projeto desenvolvido apartir de um framework básico e com conhecimento atráves de sites, Youtube e livros.
+Projeto desenvolvido apartir de um framework básico e com conhecimento atráves de sites, youtube e livros.
 
 
 
