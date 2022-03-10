@@ -107,16 +107,16 @@ if (isset($_POST["excluir"])) {
                                         foreach ($gerenciartccs as $item) {
                                             echo "<tr>";
                                             echo "<td>";
-                                            $objcc->listaGrupos($item[id]);
+                                            $objcc->listaGrupos($item['id']);
                                             echo "</td>";
-                                            echo "<td> {$item[tema]} </td>";
-                                            echo "<td> {$item[ano]} </td>";
-                                            echo "<td> {$item[semestre]} </td>";
+                                            echo "<td> {$item['tema']} </td>";
+                                            echo "<td> {$item['ano']} </td>";
+                                            echo "<td> {$item['semestre']} </td>";
                                             echo "<td>";
-                                            $objcc->listaDocentes($item[id]);
+                                            $objcc->listaDocentes($item['id']);
                                             echo "</td>";
-                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Alterar'><button class='btn btn-primary btn-sm' data-title='Alterar' data-toggle='modal' data-target='#alterar{$item[id]}'><span class='fa fa-pencil'></span></button></p></td>";
-                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Excluir'><button class='btn btn-primary btn-sm' data-title='Delete' data-toggle='modal' data-target='#excluir{$item[id]}'><span class='fa fa-trash'></span></button></p></td>";
+                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Alterar'><button class='btn btn-primary btn-sm' data-title='Alterar' data-toggle='modal' data-target='#alterar{$item['id']}'><span class='fa fa-pencil'></span></button></p></td>";
+                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Excluir'><button class='btn btn-primary btn-sm' data-title='Delete' data-toggle='modal' data-target='#excluir{$item['id']}'><span class='fa fa-trash'></span></button></p></td>";
                                             echo "</tr>";
                                         }
                                         ?>

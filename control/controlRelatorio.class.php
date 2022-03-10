@@ -30,8 +30,8 @@ class ControlRelatorio extends ControlGeral {
     function consultarAluno($dados) {
 
         #extração de dados do aluno
-        $nome = $dados[nome][0];
-        $id = $dados[id_aluno][0];
+        $nome = $dados['nome'][0];
+        $id = $dados['id_aluno'][0];
 
         $objAluno = new modelAluno();
         return $listaAluno = $objAluno->consultarAluno($id, $nome,$cpf,$matricula);
@@ -47,10 +47,10 @@ class ControlRelatorio extends ControlGeral {
     function consultarGrupo($dados) {
 
         #extração de dados do cliente
-        $nome = $dados[nome][0];
-        $id = $dados[id_grupo][0];
-        $email = $dados[email][0];
-        $nomealunos = $dados[nomealunos][0];
+        $nome = $dados['nome'][0];
+        $id = $dados['id_grupo'][0];
+        $email = $dados['email'][0];
+        $nomealunos = $dados['nomealunos'][0];
 
         $objGrupo = new modelGrupo();
         return $listaGrupo = $objGrupo->consultarGrupo($id, $nome, $email, $nomealunos);
@@ -60,10 +60,10 @@ class ControlRelatorio extends ControlGeral {
     function consultarGerenciarTCC($dados) {
 
         #extração de dados do gerenciar tcc
-        $id = $dados[id_gerenciartcc][0];
-        $tema = $dados[tema][0];
-        $ano = $dados[ano][0];
-        $semestre = $dados[semestre][0];
+        $id = $dados['id_gerenciartcc'][0];
+        $tema = $dados['tema'][0];
+        $ano = $dados['ano'][0];
+        $semestre = $dados['semestre'][0];
        
         $objGerenciarTCC = new modelGerenciarTCC();
         return $listaGerenciarTCC = $objGerenciarTCC->consultarGerenciarTCC($id, $tema, $ano, $semestre);
@@ -79,11 +79,11 @@ class ControlRelatorio extends ControlGeral {
     function consultarAtividade($dados) {
 
         #extração de dados do cliente
-        $id = $dados[id_atividade][0];
-        $nome_atividade = $dados[nome_atividade][0];
-        $fase = $dados[fase][0];
-        $prazo = $dados[prazo][0];
-        $status = $dados[status][0];
+        $id = $dados['id_atividade'][0];
+        $nome_atividade = $dados['nome_atividade'][0];
+        $fase = $dados['fase'][0];
+        $prazo = $dados['prazo'][0];
+        $status = $dados['status'][0];
         
         
         $objAtividade = new modelAtividade();

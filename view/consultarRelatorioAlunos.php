@@ -79,11 +79,11 @@ if (isset($_POST["consultaralunos"])) {
                                         foreach ($alunos as $item) {
                                             echo "<tr>";
 
-                                            echo "<td> Nome: {$item[nome]} <br>"
-                                            . "Cpf: {$item[cpf]} <br>"
-                                            . "Matrícula: {$item[matricula]} <br>"
-                                            . "Telefone: {$item[telefone]} <br>"
-                                            . "E-mail:{$item[email]} </td>";
+                                            echo "<td> Nome: {$item['nome']} <br>"
+                                            . "Cpf: {$item['cpf']} <br>"
+                                            . "Matrícula: {$item['matricula']} <br>"
+                                            . "Telefone: {$item['telefone']} <br>"
+                                            . "E-mail:{$item['email']} </td>";
                                             echo "</tr>";
                                         }
                                         ?>

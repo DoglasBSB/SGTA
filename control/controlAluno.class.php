@@ -29,10 +29,10 @@ class ControlAluno extends ControlGeral {
     function consultarAluno($dados) {
 
         #extração de dados do aluno
-        $nome = $dados[nome][0];
-        $id = $dados[id_aluno][0];
-        $cpf = $dados[cpf][0];
-        $matricula = $dados[matricula][0];
+        $id = $dados['id_aluno'][0];
+        $nome = $dados['nome'][0];
+        $cpf = $dados['cpf'][0];
+        $matricula = $dados['matricula'][0];
 
         $objAluno = new modelAluno();
         return $listaAluno = $objAluno->consultarAluno($id, $nome, $cpf, $matricula);
@@ -47,12 +47,12 @@ class ControlAluno extends ControlGeral {
     function inserirAluno($dados) {
 
         #extração de dados do Aluno
-        $nome = $dados[nome][0];
-        $cpf = $dados[cpf][0];
-        $matricula = $dados[matricula][0];
-        $telefone = $dados[telefone][0];
-        $email = $dados[email][0];
-        $id_grupo = $dados[id_grupo][0];
+        $nome = $dados['nome'][0];
+        $cpf = $dados['cpf'][0];
+        $matricula = $dados['matricula'][0];
+        $telefone = $dados['telefone'][0];
+        $email = $dados['email'][0];
+        $id_grupo = $dados['id_grupo'][0];
 
         #invocar métódo  e passar parâmetros
         $objAluno = new modelAluno();
@@ -86,12 +86,12 @@ class ControlAluno extends ControlGeral {
     function alterarAluno($dados) {
 
         #extração de dados do aluno
-        $id = $dados[id_aluno][0];
-        $nome = $dados[nome][0];
-        $cpf = $dados[cpf][0];
-        $matricula = $dados[matricula][0];
-        $telefone = $dados[telefone][0];
-        $email = $dados[email][0];
+        $id = $dados['id_aluno'][0];
+        $nome = $dados['nome'][0];
+        $cpf = $dados['cpf'][0];
+        $matricula = $dados['matricula'][0];
+        $telefone = $dados['telefone'][0];
+        $email = $dados['email'][0];
 
 
         #invocar métódo  e passar parâmetros
@@ -119,7 +119,7 @@ class ControlAluno extends ControlGeral {
     function excluirAluno($dados) {
 
         #extração de dados do cliente
-        $id = $dados[id_aluno][0];
+        $id = $dados['id_aluno'][0];
 
         #invocar métódo  e passar parâmetros
         $objAluno = new modelAluno();
@@ -142,7 +142,7 @@ class ControlAluno extends ControlGeral {
 
         echo '<select class="form-control" name="dados[id_grupo][]" >';
         foreach ($listarGrupos as $item) {
-            echo '<option value="' . $item[id] . '">' . $item[nome] . '</option>';
+            echo '<option value="' . $item['id'] . '">' . $item['nome'] . '</option>';
         }
         echo '</select>';
     }

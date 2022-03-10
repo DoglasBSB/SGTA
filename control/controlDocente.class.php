@@ -29,9 +29,9 @@ class ControlDocente extends ControlGeral {
     function consultarDocente($dados) {
 
         #extração de dados do docente
-        $nome = $dados[nome][0];
-        $id = $dados[id_docente][0];
-        $cpf = $dados[cpf][0];
+        $nome = $dados['nome'][0];
+        $id = $dados['id_docente'][0];
+        $cpf = $dados['cpf'][0];
 
         $objDocente = new modelDocente();
         return $listaDocente = $objDocente->consultarDocente($id, $nome, $cpf);
@@ -46,10 +46,10 @@ class ControlDocente extends ControlGeral {
     function inserirDocente($dados) {
 
         #extração de dados do Aluno
-        $nome = $dados[nome][0];
-        $cpf = $dados[cpf][0];
-        $telefone = $dados[telefone][0];
-        $email = $dados[email][0];
+        $nome = $dados['nome'][0];
+        $cpf = $dados['cpf'][0];
+        $telefone = $dados['telefone'][0];
+        $email = $dados['email'][0];
 
         #invocar métódo  e passar parâmetros
         $objDocente = new modelDocente();
@@ -82,11 +82,11 @@ class ControlDocente extends ControlGeral {
     function alterarDocente($dados) {
 
         #extração de dados do aluno
-        $id = $dados[id_docente][0];
-        $nome = $dados[nome][0];
-        $cpf = $dados[cpf][0];
-        $telefone = $dados[telefone][0];
-        $email = $dados[email][0];
+        $id = $dados['id_docente'][0];
+        $nome = $dados['nome'][0];
+        $cpf = $dados['cpf'][0];
+        $telefone = $dados['telefone'][0];
+        $email = $dados['email'][0];
         
            
         #invocar métódo  e passar parâmetros
@@ -114,7 +114,7 @@ class ControlDocente extends ControlGeral {
     function excluirDocente($dados) {
 
         #extração de dados do cliente
-        $id = $dados[id_docente][0];
+        $id = $dados['id_docente'][0];
         
         #invocar métódo  e passar parâmetros
         $objDocente = new modelDocente();

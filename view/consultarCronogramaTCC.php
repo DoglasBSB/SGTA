@@ -76,12 +76,12 @@ if (isset($_POST["consultarcronograma"])) {
                                         foreach ($atividades as $item) {
                                             echo "<tr>";
                                             echo "<td>";
-                                            $objcc->listaGrupos($item[id]);
+                                            $objcc->listaGrupos($item['id']);
                                             echo "</td>";
-                                            echo "<td> Nome: {$item[nome_atividade]} <br>"
-                                            . "Fase: {$item[fase]} <br>"
-                                            . "Prazo: {$item[prazo]} <br>"
-                                            . "Status:{$item[status]} </td>";
+                                            echo "<td> Nome: {$item['nome_atividade']} <br>"
+                                            . "Fase: {$item['fase']} <br>"
+                                            . "Prazo: {$item['prazo']} <br>"
+                                            . "Status:{$item['status']} </td>";
                                             echo "</td>";
                                             echo "</tr>";
                                         }

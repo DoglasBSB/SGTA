@@ -104,14 +104,14 @@ if (isset($_POST["excluir"])) {
                                         #foreach para listar os dados dos grupos
                                         foreach ($grupos as $item) {
                                             echo "<tr>";
-                                            echo "<td> {$item[nome]} </td>";
+                                            echo "<td> {$item['nome']} </td>";
                                             echo "<td>";
-                                            $objcc->listaAlunos($item[id]);
+                                            $objcc->listaAlunos($item['id']);
                                             echo "</td>";
-                                            echo "<td> {$item[email]} </td>";
+                                            echo "<td> {$item['email']} </td>";
 
-                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Alterar'><button class='btn btn-primary btn-sm' data-title='Alterar' data-toggle='modal' data-target='#alterar{$item[id]}'><span class='fa fa-pencil'></span></button></p></td>";
-                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Excluir'><button class='btn btn-primary btn-sm' data-title='Delete' data-toggle='modal' data-target='#excluir{$item[id]}'><span class='fa fa-trash'></span></button></p></td>";
+                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Alterar'><button class='btn btn-primary btn-sm' data-title='Alterar' data-toggle='modal' data-target='#alterar{$item['id']}'><span class='fa fa-pencil'></span></button></p></td>";
+                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Excluir'><button class='btn btn-primary btn-sm' data-title='Delete' data-toggle='modal' data-target='#excluir{$item['id']}'><span class='fa fa-trash'></span></button></p></td>";
                                             echo "</tr>";
                                         }
                                         ?>
@@ -128,7 +128,7 @@ if (isset($_POST["excluir"])) {
             foreach ($grupos as $item) {
                 ?>
                 <!-- modal de alterar -->
-                <div class="modal fade" id="alterar<?php echo $item[id] ?>" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                <div class="modal fade" id="alterar<?php echo $item['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -139,7 +139,7 @@ if (isset($_POST["excluir"])) {
 
                                 <?php
                                 #pegar o valor do id do grupo
-                                $dados[id_grupo][0] = $item[id];
+                                $dados['id_grupo'][0] = $item['id'];
 
                                 #método para selecionar o grupo desejado
                                 $grupos_alterar = $objcc->consultarGrupo($dados);
@@ -161,7 +161,7 @@ if (isset($_POST["excluir"])) {
             foreach ($grupos as $item) {
                 ?>
                 <!-- modal de exluir -->
-                <div class="modal fade" id="excluir<?php echo $item[id] ?>" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                <div class="modal fade" id="excluir<?php echo $item['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -172,7 +172,7 @@ if (isset($_POST["excluir"])) {
 
                                 <?php
                                 #pegar o valor do id do grupo
-                                $dados[id_grupo][0] = $item[id];
+                                $dados['id_grupo'][0] = $item['id'];
 
                                 #método para selecionar o grupo desejado
                                 $grupos_excluir = $objcc->consultarGrupo($dados);

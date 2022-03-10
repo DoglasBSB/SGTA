@@ -29,10 +29,10 @@ class ControlGerenciarTCC extends ControlGeral {
     function consultarGerenciarTCC($dados) {
 
         #extração de dados do gerenciar tcc
-        $id = $dados[id_gerenciartcc][0];
-        $tema = $dados[tema][0];
-        $ano = $dados[ano][0];
-        $semestre = $dados[semestre][0];
+        $id = $dados['id_gerenciartcc'][0];
+        $tema = $dados['tema'][0];
+        $ano = $dados['ano'][0];
+        $semestre = $dados['semestre'][0];
        
         $objGerenciarTCC = new modelGerenciarTCC();
         return $listaGerenciarTCC = $objGerenciarTCC->consultarGerenciarTCC($id, $tema, $ano, $semestre);
@@ -202,7 +202,7 @@ class ControlGerenciarTCC extends ControlGeral {
         
          foreach ($grupos as $item) {
             
-             echo $item[nome].'  ';
+             echo $item['nome'].'  ';
         }
     }
     
@@ -216,7 +216,7 @@ class ControlGerenciarTCC extends ControlGeral {
         
          foreach ($docentes as $item) {
             
-             echo $item[nome].'  ';
+             echo $item['nome'].'  ';
         }
     }
     

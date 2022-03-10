@@ -26,6 +26,7 @@ $pdo = new PDO('mysql:host=localhost; dbname=sgta', 'root', '');
 $sql = $pdo->prepare("SELECT * FROM tb_grupo inner join tb_aluno on tb_grupo.id = tb_aluno.id_grupo where tb_aluno.id_grupo = id_grupo");
 $sql->execute();
 
+
 foreach ($sql as $resultado) {
 
     $pdf->Cell(0, 0.5, 'Nome: ' . $resultado['id_grupo'], 0, 1, 'L');

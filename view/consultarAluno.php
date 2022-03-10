@@ -106,13 +106,13 @@ if (isset($_POST["excluir"])) {
                                         #foreach para listar os dados do aluno
                                         foreach ($alunos as $item) {
                                             echo "<tr>";
-                                            echo "<td> {$item[nome]} </td>";
-                                            echo "<td> {$item[cpf]} </td>";
-                                            echo "<td> {$item[matricula]} </td>";
-                                            echo "<td> {$item[telefone]} </td>";
-                                            echo "<td> {$item[email]} </td>";
-                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Alterar'><button class='btn btn-primary btn-sm' data-title='Alterar' data-toggle='modal' data-target='#alterar{$item[id]}'><span class='fa fa-pencil'></span></button></p></td>";
-                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Excluir'><button class='btn btn-primary btn-sm' data-title='Delete' data-toggle='modal' data-target='#excluir{$item[id]}'><span class='fa fa-trash'></span></button></p></td>";
+                                            echo "<td> {$item['nome']} </td>";
+                                            echo "<td> {$item['cpf']} </td>";
+                                            echo "<td> {$item['matricula']} </td>";
+                                            echo "<td> {$item['telefone']} </td>";
+                                            echo "<td> {$item['email']} </td>";
+                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Alterar'><button class='btn btn-primary btn-sm' data-title='Alterar' data-toggle='modal' data-target='#alterar{$item['id']}'><span class='fa fa-pencil'></span></button></p></td>";
+                                            echo "<td><p data-placement='top' data-toggle='tooltip' title='Excluir'><button class='btn btn-primary btn-sm' data-title='Delete' data-toggle='modal' data-target='#excluir{$item['id']}'><span class='fa fa-trash'></span></button></p></td>";
                                             echo "</tr>";
                                         }
                                         ?>
@@ -129,7 +129,7 @@ if (isset($_POST["excluir"])) {
             foreach ($alunos as $item) {
                 ?>
                 <!-- modal de alterar -->
-                <div class="modal fade" id="alterar<?php echo $item[id] ?>" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                <div class="modal fade" id="alterar<?php echo $item['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -140,7 +140,7 @@ if (isset($_POST["excluir"])) {
 
                                 <?php
                                 #pegar o valor do id do aluno
-                                $dados[id_aluno][0] = $item[id];
+                                $dados['id_aluno'][0] = $item['id'];
 
                                 #método para selecionar o aluno desejado
                                 $alunos_alterar = $objcc->consultarAluno($dados);
@@ -162,7 +162,7 @@ if (isset($_POST["excluir"])) {
             foreach ($alunos as $item) {
                 ?>
                 <!-- modal de exluir -->
-                <div class="modal fade" id="excluir<?php echo $item[id] ?>" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+                <div class="modal fade" id="excluir<?php echo $item['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -173,7 +173,7 @@ if (isset($_POST["excluir"])) {
 
                                 <?php
                                 #pegar o valor do id do aluno
-                                $dados[id_aluno][0] = $item[id];
+                                $dados['id_aluno'][0] = $item['id'];
 
                                 #método para selecionar o aluno desejado
                                 $alunos_excluir = $objcc->consultarAluno($dados);

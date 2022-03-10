@@ -29,9 +29,9 @@ class ControlGrupo extends ControlGeral {
     function consultarGrupo($dados) {
 
         #extração de dados do grupo
-        $nome = $dados[nome][0];
-        $id = $dados[id_grupo][0];
-        $email = $dados[email][0];
+        $nome = $dados['nome'][0];
+        $id = $dados["id_grupo"][0];
+        $email = $dados['email'][0];
         
 
         $objGrupo = new modelGrupo();
@@ -47,8 +47,8 @@ class ControlGrupo extends ControlGeral {
     function inserirGrupo($dados) {
 
         #extração de dados do Aluno
-        $nome = $dados[nome][0];
-        $email = $dados[email][0];
+        $nome = $dados['nome'][0];
+        $email = $dados['email'][0];
        
         
 
@@ -83,9 +83,9 @@ class ControlGrupo extends ControlGeral {
     function alterarGrupo($dados) {
 
         #extração de dados do aluno
-        $id = $dados[id_grupo][0];
-        $nome = $dados[nome][0];
-        $email = $dados[email][0];
+        $id = $dados['id_grupo'][0];
+        $nome = $dados['nome'][0];
+        $email = $dados['email'][0];
         
         
            
@@ -113,7 +113,7 @@ class ControlGrupo extends ControlGeral {
     function excluirGrupo($dados) {
 
         #extração de dados do cliente
-        $id = $dados[id_grupo][0];
+        $id = $dados['id_grupo'][0];
         
         #invocar métódo  e passar parâmetros
         $objGrupo = new modelGrupo();
@@ -137,7 +137,7 @@ class ControlGrupo extends ControlGeral {
         
          foreach ($alunos as $item) {
             
-             echo $item[nome].' | ';
+             echo $item['nome'].' | ';
         }
     }
 

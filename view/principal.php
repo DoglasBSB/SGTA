@@ -79,7 +79,7 @@ if ($_SESSION['logado'] != 1) {
                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <!--RODAPÉ-->
                 <footer> 
-                    <nav class=" navbar navbar-inverse">
+                    <nav class=" navbar navbar-inverse ">
                         <div class='container-fluid'>
                             <div class='navbar-header'>
                                 <button type="button" class="navbar-toggle collapse" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

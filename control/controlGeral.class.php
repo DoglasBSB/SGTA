@@ -82,12 +82,10 @@ class ControlGeral {
     function alerta($msg) {
         $alerta = '';
         if (!empty($msg)) {
-            $alerta = '<div class="alert alert-info">';
-            $alerta.='<button type="button" class="close" data-dismiss="alert">×</button>';
-            $alerta.='<strong>Informação: </strong>' . $msg . '</div>';
-            
-            echo $alerta;
-           
+            $alerta = '<div class="alert alert-info" role="alert">';
+            $alerta.='<button type="button" class="close" data-dismiss="alert" >×</button>';
+            $alerta.='<strong>Informação: </strong>' . $msg . '</div>';          
+            echo $alerta;                
         }
     }
     

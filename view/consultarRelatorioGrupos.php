@@ -94,11 +94,11 @@ if (isset($_POST["consultargrupos"])) {
                                         #foreach para listar os dados dos grupos
                                         foreach ($grupos as $item) {
                                             echo "<tr>";
-                                            echo "<td> Grupo: {$item[nome]} "
+                                            echo "<td> Grupo: {$item['nome']} "
                                             . " <br>   Alunos: ";
-                                            $objcc->listaAlunos($item[id]);
+                                            $objcc->listaAlunos($item['id']);
                                             echo ""
-                                            . " <br> E-mail: {$item[email]} </td>";
+                                            . " <br> E-mail: {$item['email']} </td>";
                                             echo "</tr>";
                                         }
                                         ?>

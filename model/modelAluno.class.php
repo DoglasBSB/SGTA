@@ -100,7 +100,7 @@ class modelAluno extends modelConexao {
      * @param int $id do grupo
      * @return Array dados do aluno
      */
-    public function consultarAluno($id_aluno, $nome,$matricula) {
+    public function consultarAluno($id_aluno, $nome, $matricula) {
 
         #setar os valores
         $this->setId($id_aluno);
@@ -110,7 +110,7 @@ class modelAluno extends modelConexao {
         $this->setId_grupo($id_grupo);
 
         #montar a consultar (whre 1 serve para selecionar todos os registros)
-        $sql = "select * from tb_aluno where true";
+        $sql = "select * from tb_aluno where true";  
 
         #verificar se foi passado algum valor de $id_aluno    
         if ($this->getId() != null) {
@@ -268,7 +268,7 @@ class modelAluno extends modelConexao {
         $this->setMatricula($matricula);
         $this->setTelefone($telefone);
         $this->setEmail($email);
-         $this->setId_grupo($id_grupo);
+        $this->setId_grupo($id_grupo);
 
         #montar a consulta
         $sql = "UPDATE tb_aluno SET nome = :nome, cpf = :cpf, matricula = :matricula , telefone = :telefone, email = :email WHERE id = :id_aluno";
