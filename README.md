@@ -5,12 +5,12 @@
 .</p>
  
 <p align="center">
- <a href="https://github.com/DoglasBSB/RobotProjectFD/new/main?readme=1#descri%C3%A7%C3%A3o-do-projeto">Objetivo</a> •
- <a href="https://github.com/DoglasBSB/RobotProjectFD/new/main?readme=1#pr%C3%A9-requisitos">Pré-requisitos</a> • 
- <a href="https://github.com/DoglasBSB/RobotProjectFD/new/main?readme=1#configurando-as-vari%C3%A1veis-de-ambiente-e-o-chrome-driver-no-windows">Configurações</a> • 
- <a href="https://github.com/DoglasBSB/RobotProjectFD/new/main?readme=1#-tecnologias">Tecnologias</a> • 
- <a href="https://github.com/DoglasBSB/RobotProjectFD/blob/main/LICENSE">Licença</a> • 
- <a href="https://github.com/DoglasBSB/RobotProjectFD/new/main?readme=1#autor">Autor</a>
+ <a href="https://github.com/DoglasBSB/SGTA#descri%C3%A7%C3%A3o-do-projeto">Objetivo</a> •
+ <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#pr%C3%A9-requisitos">Pré-requisitos</a> • 
+ <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#instala%C3%A7%C3%A3o-do-sistema">Instalação</a> • 
+ <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#-tecnologias">Tecnologias</a> • 
+ <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#licen%C3%A7a">Licença</a> • 
+ <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#autor">Autor</a>
 </p>
 
 ### Características e principais funcionalidades
@@ -39,7 +39,7 @@ Antes de iniciar, você precisa ter instalado em sua máquina as seguintes ferra
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
- [HTML] |  [CSS] | [JavaScript] | [Bootstrap] | [PHP] | [MySQL] | [Apache] | [Vega] | [Jmeter] | [NetBeans] |
+ [HTML]()| [CSS]() | [JavaScript]() | [Bootstrap]() | [PHP]() | [MySQL]() | [Apache]() | [Vega]() | [Jmeter]() | [NetBeans]() 
 
 ### Licença
 
