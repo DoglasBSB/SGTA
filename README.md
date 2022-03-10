@@ -9,7 +9,7 @@
  <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#pr%C3%A9-requisitos">Pré-requisitos</a> • 
  <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#instala%C3%A7%C3%A3o-do-sistema">Instalação</a> • 
  <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#-tecnologias">Tecnologias</a> • 
- <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#licen%C3%A7a">Licença</a> • 
+ <a href="https://github.com/DoglasBSB/SGTA/blob/master/LICENSE">Licença</a> • 
  <a href="https://github.com/DoglasBSB/SGTA/edit/master/README.md#autor">Autor</a>
 </p>
 
