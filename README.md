@@ -22,9 +22,9 @@ Apache, Linguagem Web HTML, PHP, JavaScript e CSS.
 Antes de iniciar, você precisa ter instalado em sua máquina as seguintes ferramentas:
 
 [Apache](https://httpd.apache.org/download.cgi) Servidor Web
-[Mysql](https://www.mysql.com/downloads/) MySQL 
+[Mysql](https://www.mysql.com/downloads/) MySQL - Sistema gerenciado de banco de dados
 [NetBeans](https://netbeans.apache.org/download/nb126/nb126.html)  IDE para desenvolvimento
-[VSCode](https://code.visualstudio.com/) Editor de editor para trabalhar com o código.
+[VSCode](https://code.visualstudio.com/) Editor para trabalhar com o código.
 [Git](https://git-scm.com) Para versionamento do código, caso venha a colaborar para o projeto.
 
 ### Instalação do Sistema
